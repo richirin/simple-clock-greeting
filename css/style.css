@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap');
+
+:root {
+  --primary-color: #149414;
+  --font-size: 35px;
+}
+
+* {
+  box-sizing: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container #time,
+#greeting,
+#your-name {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: var(--font-size);
+  font-family: 'Source Code Pro', monospace, sans-serif;
+}
+
+.container #your-name {
+  display: inline;
+}
+
+.container #name {
+  background-color: black;
+  color: var(--primary-color);
+  outline: 0;
+  border: 0;
+  border-bottom: 0.1px solid #fff;
+  font-weight: bold;
+  width: 150px;
+  text-align: center;
+  font-size: var(--font-size);
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
